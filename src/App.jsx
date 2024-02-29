@@ -1,33 +1,149 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import './reset.css'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <h1>Kevin Hogan</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#About_Me">About Me</a>
+            </li>
+            <li>
+              <a href="#Work">Work</a>
+            </li>
+            <li>
+              <a href="#Contact_Info">Contact Info</a>
+            </li>
+            <li>
+              <a href="./assets/pdf/Kevin Hogan Resume.pdf">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section className="about-me">
+          <h2 id="About_Me">About Me</h2>
+          <div>
+            <img className="portrait" src="./assets/images/portrait.jpg" />
+            <p>
+              I have spent over 30 years in the video game industry as a producer,
+              designer, and development director, having worked on some of the
+              most successful franchises in the industry&#39;s history including
+              NHL Hockey, John Madden Football, Sim City, The Sims, and Monopoly
+              Go! I discovered a deep passion for programming as a child teaching
+              myself BASIC on my TI-99/4A. During my time as a team leader in
+              video gaming I taught myself VBA. I now intend to spend the second
+              half of my life focused on pursuing that passion full-time as a web
+              application developer.
+            </p>
+          </div>
+        </section>
+
+        <h2 id="Work" className="work-header">Work</h2>
+        <section className="row justify-center">
+          <div className="card-column">
+            <a target="_blank" href="https://kevinchogan.github.io/module-01/">
+              <figure className="card">
+                <h3 className="card-header">Web Marketing Services</h3>
+                <img className="card-image" src="./assets/images/image-06.jpg" />
+                <div className="card-body">
+                  Refactored existing code in a web application to include
+                  accessibility features, improve code readability, and adhere to
+                  semantic HTML element style standards.
+                </div>
+              </figure>
+            </a>
+          </div>
+        </section>
+        <section className="row justify-center">
+          <div className="card-column rest">
+            <a target="_blank" href="#">
+              <figure className="card">
+                <h3 className="card-header">Lorem Ipsum</h3>
+                <img className="card-image" src="./assets/images/image-02.jpg" />
+                <div className="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                  eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </div>
+              </figure>
+            </a>
+          </div>
+          <div className="card-column rest">
+            <a target="_blank" href="#">
+              <figure className="card">
+                <h3 className="card-header">Dolor Sit</h3>
+                <img className="card-image" src="./assets/images/image-01.jpg" />
+                <div className="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                  eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </div>
+              </figure>
+            </a>
+          </div>
+          <div className="card-column rest">
+            <a target="_blank" href="#">
+              <figure className="card">
+                <h3 className="card-header">Consectetur Adipisci Elit</h3>
+                <img className="card-image" src="./assets/images/image-04.jpg" />
+                <div className="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                  eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </div>
+              </figure>
+            </a>
+          </div>
+          <div className="card-column rest">
+            <a target="_blank" href="#">
+              <figure className="card">
+                <h3 className="card-header">Corporis Suscipit</h3>
+                <img className="card-image" src="./assets/images/image-05.jpg" />
+                <div className="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                  eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </div>
+              </figure>
+            </a>
+          </div>
+          <div className="card-column rest">
+            <a target="_blank" href="#">
+              <figure className="card">
+                <h3 className="card-header">Nulla Pariatur</h3>
+                <img className="card-image" src="./assets/images/image-03.jpg" />
+                <div className="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                  eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </div>
+              </figure>
+            </a>
+          </div>
+        </section>
+        <section className="contacts">
+          <h2 id="Contact_Info">Contact Info</h2>
+          <ul>
+            <li>Phone Number: <a href="tel:9256990145">925-699-0145</a></li>
+            <li>
+              Email: <a href="mailto:kchogan@pacbell.net">kchogan@pacbell.net</a>
+            </li>
+            <li>
+              LinkedIn:
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/kevin-hogan-aa53392/"
+                >Profile</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <h3>Made with <span role="img" aria-label="heart">❤️</span> and CSS</h3>
+      </footer>
     </>
   )
 }
