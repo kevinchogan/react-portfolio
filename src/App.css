@@ -76,7 +76,13 @@ header nav ul li a:hover {
 
 /* Work */
 .work-header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: 1rem;
+}
+
+#work {
+  margin-top: 1rem;
 }
 
 .row {
@@ -97,7 +103,8 @@ header nav ul li a:hover {
 
 .card-column {
   flex: 1 0 100%;
-  padding: 1.5rem;
+  padding: 0.9375rem;
+  padding-top: 0;
   min-height: 25rem;
 }
 
