@@ -1,5 +1,4 @@
 import React from 'react';
-import './reset.css'
 import './App.css'
 import image01 from './assets/images/image-01.jpg';
 import image02 from './assets/images/image-02.jpg';
