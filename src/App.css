@@ -105,7 +105,7 @@ header nav ul li a:hover {
   flex: 1 0 100%;
   padding: 0.9375rem;
   padding-top: 0;
-  min-height: 25rem;
+  min-height: 15.625rem;
 }
 
 .card-column .card-image {
