@@ -142,8 +142,7 @@ function App() {
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/kevin-hogan-aa53392/"
-                >Profile</a
-              >
+                >Profile</a>
             </li>
           </ul>
         </section>
