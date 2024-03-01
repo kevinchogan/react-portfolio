@@ -3,8 +3,8 @@ import resume from '../assets/pdf/resume.pdf'
 export default function ResumePage() {
     return (
         <section className="about-me">
-          <h2 id="Resume">Resume</h2>
-          <p><a href={resume}>Download Resume</a></p>
+          <h2 id="Resume" >Resume</h2>
+          <p><a href={resume} target="_blank">Download Resume</a></p>
           <div>
             <h3>Front-end Proficiencies</h3>
             <ul>
