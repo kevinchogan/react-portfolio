@@ -11,7 +11,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--tan);
+  background-color: var(--dark-tan);
+
+  /* background-color: var(--tan); */
   font-family:Arial, Helvetica, sans-serif;
   color: var(--dark-red);
   font-size: 1.1rem;
@@ -27,6 +29,10 @@ footer {
 ​ol,
 ul {
   list-style: none;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 /* Header */
@@ -91,28 +97,36 @@ header nav ul a {
 
 header nav ul a:hover {
   text-decoration: underline;
-  background-color: var(--dark-green);
 }
 
 /* About Me */
 .portrait {
-  height: 8.875rem;
-  width: 6.25rem;
+  height: 13rem;
+  width: 10rem;
   float: left;
   margin: 0.5rem 1rem 1rem 0;
 }
 
+.portrait-body {
+  width: 75%;
+}
+
 .about-me {
-  display: block;
   padding: 1rem;
   min-height: 13.125rem;
   background-color: var(--dark-tan);
   text-align: justify;
+  min-height: 80vh;
 }
 
 .about-me p,
 .about-me h2 {
   background-color: var(--dark-tan);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Work */
@@ -192,27 +206,32 @@ header nav ul a:hover {
 .card-body {
   text-align: left;
   font-size: 0.94rem;
+  background-color: var(--tan);
+}
+
+.card-header {
+  background-color: var(--tan);
 }
 
 /* Contacts */
 .contacts {
   padding: 1.25rem;
-  color: var(--tan);
-  background-color: var(--dark-green);
+  color: var(--dark-red);
+  background-color: var(--dark-tan);
   font-weight: bolder;
+  min-height: 80vh;
 }
 
 .contacts ul,
 .contacts h2,
 .contacts a,
 .contacts li{
-  background-color: var(--dark-green);
-  color: var(--tan);
-
+  color: var(--dark-red);
+  background-color: var(--dark-tan);
 }
 
 .contacts a {
-  color: var(--tan);
+  color: var(--dar-red);
   text-decoration: none;
   font-weight: lighter;
   font-size: 0.875rem;
