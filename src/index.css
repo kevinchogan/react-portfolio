@@ -257,7 +257,48 @@ header nav ul a:hover {
 
 /* Footer */
 footer {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer img {
+  margin: 10px;
+  height: 40px;
+}
+
+#linkedin,
+#github,
+#facebook {
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+  background-size: cover;
+  transition: background-image 0.3s ease; /* Smooth transition when swapping images */
+  margin: 10px;
+}
+
+#linkedin {
+  background-image: url('../src/assets/icons/linkedin.png'); /* Set the default icon image */
+}
+
+#github {
+  background-image: url('../src/assets/icons/github.png'); /* Set the default icon image */
+}
+
+#facebook {
+  background-image: url('../src/assets/icons/facebook.png'); /* Set the default icon image */
+}
+
+#linkedin:hover {
+  background-image: url('../src/assets/icons/linkedin-hover.png'); /* Set the hover icon image */
+}
+
+#github:hover {
+  background-image: url('../src/assets/icons/github-hover.png'); /* Set the hover icon image */
+}
+
+#facebook:hover {
+  background-image: url('../src/assets/icons/facebook-hover.png'); /* Set the hover icon image */
 }
 
 /* Screen Size Adjustments */
