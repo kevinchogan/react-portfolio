@@ -106,6 +106,20 @@ header nav ul a:hover {
   margin: 0.5rem 1rem 1rem 0;
 }
 
+.project {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  min-height: 80vh;
+}
+
+.projectBtn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
 .portrait-body {
   width: 100%;
 }
@@ -174,6 +188,7 @@ header nav ul a:hover {
   padding: 0.9375rem;
   padding-top: 0;
   min-height: 15.625rem;
+  text-decoration: none;
 }
 
 .card-column .card-image {
@@ -194,7 +209,8 @@ header nav ul a:hover {
   color: var(--dark-red);
 }
 
-.card {
+.card,
+.project-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
