@@ -12,37 +12,49 @@ const Projects = () => {
         "title": "Web Marketing Services",
         "description": "Refactored existing code in a web application to include accessibility features, improve code readability, and adhere to semantic HTML element style standards.",
         "link": "https://kevinchogan.github.io/module-01/",
-        "image": image01
+        "image": image01,
+        "cardClass": "card-column",
+        "altText": "altTextTBD"
     },
     {
         "title": "Lorem Ipsum",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
         "link": "#",
-        "image": image02
+        "image": image02,
+        "cardClass": "card-column rest",
+        "altText": "altTextTBD"
     },
     {
         "title": "Dolor Sit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
         "link": "#",
-        "image": image03
+        "image": image03,
+        "cardClass": "card-column rest",
+        "altText": "altTextTBD"
     },
     {
         "title": "Consectetur Adipisci Elit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
         "link": "#",
-        "image": image04
+        "image": image04,
+        "cardClass": "card-column rest",
+        "altText": "altTextTBD"
     },
     {
         "title": "Corporis Suscipit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
         "link": "#",
-        "image": image05
+        "image": image05,
+        "cardClass": "card-column rest",
+        "altText": "altTextTBD"
     },
     {
         "title": "Nulla Pariatur",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
         "link": "#",
-        "image": image06
+        "image": image06,
+        "cardClass": "card-column rest",
+        "altText": "altTextTBD"
     }
 ]
 return projectList
