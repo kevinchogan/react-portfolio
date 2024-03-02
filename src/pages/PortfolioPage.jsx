@@ -1,30 +1,18 @@
-import image01 from '../assets/images/image-01.jpg';
-import image02 from '../assets/images/image-02.jpg';
-import image03 from '../assets/images/image-03.jpg';
-import image04 from '../assets/images/image-04.jpg';
-import image05 from '../assets/images/image-05.jpg';
-import image06 from '../assets/images/image-06.jpg';
+import Projects from '../data/cards.js'
+import Card from '../components/UI/Card'
 
 export default function PortfolioPage() {
+  const projectList = Projects();
+
+  console.log(projectList[0]);
+  const { title, description, link, image } = projectList[0];
     return (
       <>
         <h2 id="Work" className="work-header">Portfolio</h2>
         <section className="row justify-center">
-          <div className="card-column">
-            <a target="_blank" href="https://kevinchogan.github.io/module-01/">
-              <figure className="card">
-                <h3 className="card-header">Web Marketing Services</h3>
-                <img className="card-image" src={image06} />
-                <div className="card-body">
-                  Refactored existing code in a web application to include
-                  accessibility features, improve code readability, and adhere to
-                  semantic HTML element style standards.
-                </div>
-              </figure>
-            </a>
-          </div>
+          <Card title={title} description={description} link={link} image = {image}/>
         </section>
-        <section className="row justify-center">
+        {/* <section className="row justify-center">
           <div className="card-column rest">
             <a target="_blank" href="#">
               <figure className="card">
@@ -85,7 +73,7 @@ export default function PortfolioPage() {
               </figure>
             </a>
           </div>
-        </section>
+        </section> */}
       </>
     );
   }
