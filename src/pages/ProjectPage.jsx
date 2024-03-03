@@ -37,7 +37,7 @@ export default function ProjectPage() {
         </figure>
       </div>
       <div className="projectBtn">
-        <Link to="/portfolio">← Go Back</Link>
+        <Link className="go-back" to="/portfolio">Go Back</Link>
       </div>
     </section>
   );

@@ -281,7 +281,7 @@ header nav ul a:hover {
 .contacts button {
   color: var(--dark-tan);
   background-color: var(--dark-red);
-  width: 10%;
+  width: 10rem;
   height: 40px;
   border: none;
   border-radius: 4px;
@@ -303,8 +303,23 @@ header nav ul a:hover {
 .projectBtn {
   display:flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+}
+
+.go-back {
+  background-color: var(--dark-red);
+  color: var(--dark-tan);
+  height: 2rem;
+  width: 9rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  padding-top: 0.4rem;
+}
+
+.go-back:hover {
+  color: var(--dark-tan);
+  background-color: var(--tan);
+  transition: 0.3s ease;
 }
 
 .project .card-body {
@@ -330,6 +345,7 @@ header nav ul a:hover {
   color: blue;
 }
 
+.go-back:active,
 #facebook:active,
 #github:active,
 #linkedin:active,
