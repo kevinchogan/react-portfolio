@@ -248,26 +248,37 @@ header nav ul a:hover {
   color: var(--dark-red);
   background-color: var(--dark-tan);
   font-weight: bolder;
+  display:flex;
+  flex-direction: column;
   min-height: 80vh;
 }
 
-.contacts ul,
-.contacts h2,
-.contacts a,
-.contacts li{
-  color: var(--dark-red);
-  background-color: var(--dark-tan);
+.contacts h2 {
+  margin-bottom: 1rem;
 }
 
-.contacts a {
-  color: var(--dar-red);
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 0.875rem;
+.contacts input {
+  background-color: var(--tan);
+  margin-bottom: 1rem;
 }
 
-.contacts a:hover {
-  text-decoration: underline;
+.contacts #name,
+.contacts #email {
+  width: 20%;
+  border: 2px solid var(--dark-red);
+  border-radius: 4px;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.contacts #message {
+  width: 75%;
+  height: 15rem;
+  background-color: var(--tan);
+  border: 2px solid var(--dark-red);
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
 }
 
 
