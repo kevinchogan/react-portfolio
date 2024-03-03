@@ -94,17 +94,6 @@ header nav ul {
   background-color: var(--dark-green);
 }
 
-header nav ul a {
-  text-decoration: none;
-  color: var(--tan);
-  background-color: var(--dark-green);
-  padding: 0 1rem;
-}
-
-header nav ul a:hover {
-  text-decoration: underline;
-}
-
 .portrait {
   height: 13rem;
   width: 10rem;
@@ -356,6 +345,26 @@ header nav ul a:hover {
 .error-text {
   color: red;
   margin-bottom: 2rem;
+}
+
+.nav-link {
+  background-color: var(--dark-green);
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  text-decoration: none;
+  color: var(--dark-tan);
+  padding: 0.65rem 2rem;
+}
+
+.nav-link:hover{
+  text-decoration: none;
+}
+
+.active {
+  background-color: var(--dark-tan);
+  color: var(--dark-red);
+  border-radius: 4px;
+  padding-bottom: 1rem;
 }
 
 /* Footer */
