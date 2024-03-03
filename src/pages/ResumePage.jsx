@@ -4,7 +4,7 @@ export default function ResumePage() {
     return (
         <section className="about-me">
           <h2 id="Resume" >Resume</h2>
-          <p><a href={resume} target="_blank">Download Resume</a></p>
+          <p><a href={resume} download>Download Resume</a></p>
           <div>
             <h3>Front-end Proficiencies</h3>
             <ul>
