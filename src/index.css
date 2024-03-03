@@ -77,6 +77,11 @@ h3 {
   font-size: 1.25rem;
 }
 
+h4 {
+  font-size: 1rem;
+  background-color: var(--tan);
+}
+
 header nav,
 header nav h1 {
   background-color: var(--dark-green);  
@@ -105,20 +110,6 @@ header nav ul a:hover {
   width: 10rem;
   float: left;
   margin: 0.5rem 1rem 1rem 0;
-}
-
-.project {
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  min-height: 80vh;
-}
-
-.projectBtn {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
 }
 
 .portrait-body {
@@ -178,10 +169,16 @@ header nav ul a:hover {
   justify-content: center;
 }
 
+.card {
+  min-height: 21rem;
+}
+
 .card-image {
   width: 100%;
   object-fit: cover;
   object-position: 25% 25%; 
+  margin-bottom: 1rem;
+  border: 1px solid var(--dark-red)
 }
 
 .card-column {
@@ -205,7 +202,7 @@ header nav ul a:hover {
 }
 
 
-.card-column a {
+.card .card-column a {
   text-decoration: none;
   color: var(--dark-red);
 }
@@ -215,7 +212,6 @@ header nav ul a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 100%;
   padding: 0.9375rem;
   border: 1px solid var(--dark-red);
   box-shadow: 5px 5px 10px #7f7f7f;
@@ -296,6 +292,44 @@ header nav ul a:hover {
   background-color: var(--tan);
   transition: 0.3s ease;
 }
+
+.project {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  min-height: 80vh;
+}
+
+.projectBtn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.project .card-body {
+  margin-bottom: 1rem;
+}
+
+.project ul {
+  list-style-type: disc;
+  background-color: var(--tan);
+  margin-bottom: 1rem;
+}
+
+.project li {
+  background-color: var(--tan);
+  margin-left: 1.5rem;
+  font-size: 0.94rem;
+}
+
+.project-links {
+  background-color: var(--tan);
+  font-size: 0.94rem;
+  text-decoration: underline;
+  color: blue;
+}
+
 #facebook:active,
 #github:active,
 #linkedin:active,
