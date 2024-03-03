@@ -1,15 +1,76 @@
+import React, { useState } from "react";
+
 export default function ContactPage() {
-    return (
-      <form className="contacts">
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [nameValid, setNameValid] = useState(true);
+  const [emailValid, setEmailValid] = useState(true);
+  const [messageValid, setMessageValid] = useState(true);
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleBlur = (field) => {
+    switch (field) {
+      case "name":
+        setNameValid(name.trim() !== "");
+        break;
+      case "email":
+        setEmailValid(validateEmail(email));
+        break;
+      case "message":
+        setMessageValid(message.trim() !== "");
+    }
+  };
+
+  return (
+    <form className="contacts">
       <h2 id="Contact_Info">Contact Info</h2>
-      <label for="name">Name:</label>
-      <input type="text" id="name"></input>
-      <label for="email">Email Address:</label>
-      <input type="text" id="email"></input>
-      <label for="message">Message:</label>
-      <textarea type="text" id="message"></textarea>
-      <button if="submit" type="submit">Submit</button>
+      <label htmlFor="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        value={name}
+        onChange={handleNameChange}
+        onBlur={() => handleBlur("name")}
+      ></input>
+      <label htmlFor="email">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        value={email}
+        onChange={handleEmailChange}
+        onBlur={() => handleBlur("email")}
+      ></input>
+      <label htmlFor="message">Message:</label>
+      <textarea
+        type="text"
+        id="message"
+        value={message}
+        onChange={handleMessageChange}
+        onBlur={() => handleBlur("message")}
+      ></textarea>
+      {!nameValid && <p className="error-text">Name is required.</p>}
+      {!emailValid && <p className="error-text">Your email is invalid.</p>}
+      {!messageValid && <p className="error-text">Message is required.</p>}
+      <button if="submit" type="submit">
+        Submit
+      </button>
     </form>
-    );
-  }
-  
+  );
+}
