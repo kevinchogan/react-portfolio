@@ -13,11 +13,13 @@
   padding: 0;
   box-sizing: border-box;
   background-color: var(--dark-tan);
-
-  /* background-color: var(--tan); */
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: var(--dark-red);
   font-size: 1.1rem;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 header,
@@ -353,7 +355,7 @@ header nav ul {
   padding-bottom: 0.65rem;
   text-decoration: none;
   color: var(--dark-tan);
-  padding: 0.65rem 2rem;
+  padding: 0.4rem 2rem;
 }
 
 .nav-link:hover{
