@@ -38,8 +38,15 @@ export default function ContactPage() {
     }
   };
 
+  const isFormValid = nameValid && emailValid && messageValid;
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+      alert("Email sending not yet implemented")
+  };
+
   return (
-    <form className="contacts">
+    <form className="contacts" onSubmit={handleSubmit}>
       <h2 id="Contact_Info">Contact Info</h2>
       <label htmlFor="name">Name:</label>
       <input
@@ -68,7 +75,7 @@ export default function ContactPage() {
       {!nameValid && <p className="error-text">Name is required.</p>}
       {!emailValid && <p className="error-text">Your email is invalid.</p>}
       {!messageValid && <p className="error-text">Message is required.</p>}
-      <button if="submit" type="submit">
+      <button if="submit" type="submit"  disabled={!isFormValid}>
         Submit
       </button>
     </form>
