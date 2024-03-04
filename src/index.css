@@ -62,7 +62,7 @@ header {
 }
 
 .nav-container ul {
-  text-align: end;
+  text-align: center;
   height: 1.5rem;
 }
 
@@ -354,6 +354,7 @@ header nav ul {
   padding: 0.2rem 0.3rem 0 0.3rem;
   text-decoration: none;
   color: var(--dark-tan);
+  font-size: 0.8rem;
 }
 
 .nav-link:hover{
@@ -432,6 +433,7 @@ footer img {
 
   .nav-link {
     padding: 0.2rem 1.25rem 0 1.25rem;
+    font-size: 1.1rem;
   }  
   .active {
     padding-bottom: 1rem;
@@ -439,7 +441,7 @@ footer img {
 
   .contacts #name,
   .contacts #email {
-    width: 0%;
+    width: 50%;
   }
 
 }

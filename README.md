@@ -34,8 +34,9 @@ A portfolio page built using React to demonstrate my work creating websites, dat
 * React, React-dom, Eslint-plugin-react-hooks Copyright © Meta Platforms, Inc. and affiliates.
 * React-router-dom Copyright © React Training LLC 2015-2019 Copyright © Remix Software Inc. 2020-2021 Copyright © Shopify Inc. 2022-2023
 * Eslint-plugin-react Copyright © 2014 Yannick Croissant
-* Eslint-plugin-react-refresh Copyright © Arnaud Barré (https://github.com/ArnaudBarre)
+* Eslint-plugin-react-refresh Copyright © [Arnaud Barré](https://github.com/ArnaudBarre)
 * Vite Copyright © 2019-present, Yuxi (Evan) You and Vite contributors
+* DM Sans designed by Colophon Foundry (UK), that started from the Latin portion of ITF Poppins, by Jonny Pinhorn. Licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
 
 ## License
 
