@@ -5,7 +5,7 @@ import facebook from '../assets/icons/facebook.png'
 export default function Footer() {
     return (
         <footer>
-        <a href="https://www.linkedin.com/in/kevin-hogan-aa53392/" target="_blank">
+        <a href="https://www.linkedin.com/in/kevin-c-hogan/" target="_blank">
           {/* <img id='linkedin' src={linkedin}></img> */}
           <div id='linkedin'></div>
         </a>
